@@ -8,11 +8,11 @@
     margin-top: 10px;
     margin-right: 50px;
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
     font-weight: 500;
 }
 
 .Link:hover{
-  color: white;
+  color: rgb(179, 19, 19);
 }

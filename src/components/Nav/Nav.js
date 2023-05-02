@@ -8,23 +8,30 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = () =>{
     const {items} = useContext(ItemsContext);
+
+    let cantidadtotal =0;
+    for (const item of items) {
+        cantidadtotal += item.cantidad;
+      }
+
     return (
         <div className="menu pb-2">
         <ul className="list-ul">
             <Link className="Link" to="/">
                 INICIO
             </Link>
+
             <Link className="Link">
                 NOSOTROS
             </Link>
+
             <Link className="Link">
                 CONTACTANOS
             </Link>
-            <Link className="Link" to="/shoppingcart" >
-               
+
+            <Link className="Link" to="/shoppingcart" >               
             <FontAwesomeIcon icon={faCartShopping} />
-            <span style={{fontSize: "18x"}}>({items.length})  </span>
-                     
+            <span style={{fontSize: "18x"}}>({cantidadtotal})  </span>                     
             </Link>
             
         </ul>

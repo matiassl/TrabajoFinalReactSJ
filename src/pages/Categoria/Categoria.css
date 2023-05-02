@@ -36,3 +36,8 @@ border-top: 1px solid #222222;
   display: flex;
   justify-content: flex-end;
 }
+
+.caja{
+  color: black;
+  text-decoration: none;
+}

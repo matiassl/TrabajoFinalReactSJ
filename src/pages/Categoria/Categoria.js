@@ -60,7 +60,7 @@ const Categoria = () => {
                 Items.map((item) => {
                   return (
                     <div key={item.id}>
-                      <Link to={`/item/${item.id}`}>
+                      <Link to={`/item/${item.id}`} className="caja">
                         <CardItem data={item} />
                       </Link>
                     </div>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap');
-
 body {
   margin: 0;
   font-family: 'Montserrat', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,10 +7,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F5F5F5 !important;
+  background-color: #F5F5F5 !important; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* body{
+  background-image: url(../src/assets/fondo.png);
+   background-color: black;
+background-position: center;
+background-repeat: repeat;
+  background-size: 50%;	
+overflow-x: hidden;
+   font-family: 'Dosis';
+} */

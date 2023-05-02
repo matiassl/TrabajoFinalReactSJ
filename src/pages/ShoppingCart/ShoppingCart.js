@@ -16,13 +16,27 @@ const ShoppingCart = () => {
         setItems(newItems);
     }
 
+    let total = 0;
+    for (const item of items) {
+        total += item.price * item.cantidad;
+    }
+
     return (
         <>
-            <div className="container paso2" id="paso2">
+            <div className="titulo-pagina py-2">
+        <h3>Carrito </h3>
+      </div>
+            <div className="container box">
                 {items.length === 0 ? (
-                    <h1>No hay productos seleccionados</h1>
+                    <div className="titulo mt-3">
+                        <h3>No hay productos seleccionados</h3>
+                    </div>
+
                 ) : (
                     <div>
+                        <div className="titulo mt-3">
+                            <h3> Mis Articulos</h3>
+                        </div>
                         <table className="table">
                             <thead>
                                 <tr>
@@ -45,12 +59,17 @@ const ShoppingCart = () => {
                                         </td>
                                     </tr>
                                 ))}
+                                <tr>
+                                    <td></td><td></td><td><b>Precio total:</b></td><td>{total}</td>
+                                </tr>
                             </tbody>
                         </table>
                         <div className="container text-end" id="paso3">
                             <div className="totalfinal"></div>
                             <br />
-                            <Button variant="secondary mx-1">Cancelar</Button>
+                            <Link to="/">
+                                <Button variant="secondary mx-1">Seguir comprando</Button>
+                            </Link>                            
                             <Link to="/compra">
                                 <Button variant="success mx-1">Comprar</Button>
                             </Link>

@@ -1,3 +1,12 @@
-.paso2{
+.box{
     background-color: aliceblue;
+    min-height: 300px;
 }
+
+.titulo-pagina {
+    /* background-color: #1a5276 !important; */
+    background-color: rgb(179, 19, 19) !important;
+    color: white;
+    width: 100%;
+    
+  }
