@@ -1,0 +1,16 @@
+.imagen { 
+
+    max-height: 300px;
+    width: auto;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: gray;
+  }
+  

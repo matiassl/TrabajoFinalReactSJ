@@ -1,0 +1,28 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Categorias.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
+
+const Categorias = () => {
+    return (
+        <>
+            <div className="container d-flex justify-content-end">
+                <span style={{marginTop: "5px"}}>Filtrar por:</span>
+                <div className="dropdown">
+                    <button className="dropdown-btn">Categorias<FontAwesomeIcon icon={faChevronDown} className="icono" /></button>
+                    <div className="dropdown-content">
+                        <Link to="/" className="dropdown-item">Todos</Link>
+                        <Link to="/categoria/electronic" className="dropdown-item">electronic</Link>
+                        <Link to="/categoria/jewelery" className="dropdown-item">jewelery</Link>
+                        <Link to="/categoria/seguridad" className="dropdown-item">Seguridad</Link>
+                    </div>
+                </div>
+            </div>
+
+        </>
+    );
+}
+
+export default Categorias;

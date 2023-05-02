@@ -1,0 +1,20 @@
+.menu{
+
+}
+.list-ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+.Link {
+    margin-top: 10px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.Link:hover{
+  color: aquamarine;
+}

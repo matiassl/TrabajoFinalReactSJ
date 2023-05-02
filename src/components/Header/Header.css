@@ -1,0 +1,15 @@
+/* .header{
+    display: flex;
+    justify-content:space-around;
+} */
+
+.header{
+    background-color: #1A5276;
+    color: white;
+
+}
+
+.header .titulo .imagen{
+    height: 50px;
+}
+
