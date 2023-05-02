@@ -23,7 +23,7 @@ const Nav = () =>{
             <Link className="Link" to="/shoppingcart" >
                
             <FontAwesomeIcon icon={faCartShopping} />
-            <span style={{paddingBottom: "105px"}}>({items.length})  </span>
+            <span style={{fontSize: "18x"}}>({items.length})  </span>
                      
             </Link>
             

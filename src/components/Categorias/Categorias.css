@@ -42,7 +42,8 @@
 
   .dropdown:hover .dropdown-content a:hover {
    
-    background-color: #868695;
+    background-color: #333333;
+    color: white;
   }
 
   .dropdown:hover .dropdown-btn {

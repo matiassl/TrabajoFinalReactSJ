@@ -5,9 +5,13 @@
 }
 
 .titulo-pagina {
-  background-color: #333333 !important;
+  background-color: #1a5276 !important;
   color: white;
   width: 100%;
+  
+}
+.titulo-pagina h2{
+  font-size: 25px;
 }
 
 

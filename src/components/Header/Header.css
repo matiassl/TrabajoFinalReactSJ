@@ -4,12 +4,13 @@
 } */
 
 .header{
-    background-color: #1A5276;
+    background-color: #333333;
     color: white;
 
 }
 
 .header .titulo .imagen{
     height: 50px;
+    
 }
 

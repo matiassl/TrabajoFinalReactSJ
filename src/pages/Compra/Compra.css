@@ -1,0 +1,13 @@
+.formulario{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.input, .alert{
+    width: 600px;
+}
+.alert{
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,6 +1,4 @@
-.menu{
 
-}
 .list-ul {
     display: flex;
     justify-content: center;
@@ -16,5 +14,5 @@
 }
 
 .Link:hover{
-  color: aquamarine;
+  color: white;
 }

@@ -20,32 +20,33 @@ const CardList = () => {
   }, []);
 
   return (
-    <>
+
+    <div>
+
+      <div className="titulo-pagina py-2">
+        <h2>Nuestros Productos</h2>
+      </div>
+
       {isLoading ? (
         <div className="Spinner">
           <SpinnerBs />
         </div>
       ) : (
-        <div>
-
-        <div className="titulo-pagina py-2">
-                <h2>Nuestros Productos</h2>
-              </div>
         <div className="container">
-              
+
           <div className="row titulo-productos">
             <div className="d-flex justify-content-between mt-3">
-              <div className=""  style={{marginTop: "7px"}}>
+              <div className="" style={{ marginTop: "7px" }}>
                 Productos /
               </div>
               <div className="">
-              <Categorias />
+                <Categorias />
               </div>
-              
+
             </div>
-            <hr/>
+            <hr />
             <div className="productos"><b>{Items.length}</b>- Productos</div>
-           
+
           </div>
 
           <div className="Cards-List container">
@@ -61,10 +62,11 @@ const CardList = () => {
               })
             }
           </div>
-        </div>
-        </div>
-      )}
-    </>
+        </div>)}
+
+    </div>
+
+
   );
 
 };

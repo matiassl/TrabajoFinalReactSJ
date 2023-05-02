@@ -8,7 +8,7 @@ import ItemDetail from './pages/ItemDetail/ItemDetail';
 import { ItemsProvider } from './contexts/ItemsContext';
 import Categoria from './pages/Categoria/Categoria';
 import ShoppingCart from './pages/ShoppingCart/ShoppingCart';
-
+import Compra from './pages/Compra/Compra';
 const App = () => {
   return (
     <ItemsProvider>    
@@ -20,6 +20,7 @@ const App = () => {
                <Route path="/item/:id"  element={<ItemDetail/>} />
                <Route path="/categoria/:cat"  element={<Categoria/>} />
                <Route path="/shoppingcart" element={<ShoppingCart />}/>
+               <Route path="/compra" element={<Compra />}/>
         </Routes> 
       </div>
     </Router>
