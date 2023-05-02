@@ -14,9 +14,10 @@ const Categorias = () => {
                     <button className="dropdown-btn">Categorias<FontAwesomeIcon icon={faChevronDown} className="icono" /></button>
                     <div className="dropdown-content">
                         <Link to="/" className="dropdown-item">Todos</Link>
-                        <Link to="/categoria/electronic" className="dropdown-item">electronic</Link>
-                        <Link to="/categoria/jewelery" className="dropdown-item">jewelery</Link>
-                        <Link to="/categoria/seguridad" className="dropdown-item">Seguridad</Link>
+                        <Link to="/categoria/Carnes" className="dropdown-item">Carnes</Link>
+                        <Link to="/categoria/Hamburguesas" className="dropdown-item">Hamburguesas</Link>
+                        <Link to="/categoria/Pastas" className="dropdown-item">Pastas</Link>
+                        <Link to="/categoria/Pizzas" className="dropdown-item">Pizzas</Link>
                     </div>
                 </div>
             </div>

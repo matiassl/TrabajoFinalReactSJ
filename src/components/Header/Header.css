@@ -1,17 +1,9 @@
-/* .header{
-    display: flex;
-    justify-content:space-around;
-} */
-
 .header{
     background-color: whitesmoke;
-
     color: white;
-
 }
 
 .header .titulo .imagen{
-    height: 80px;
-    
+    height: 80px;    
 }
 

@@ -4,7 +4,7 @@
   gap: 5px;
 }
 
-.titulo-pagina{
+.titulo-pagina {
   background-color: #222222;
   color: white;
   width: 100%;
@@ -14,21 +14,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  
 }
 
-.titulo-productos hr{
+.titulo-productos hr {
   margin-top: 10px;
-border-top: 1px solid #222222;
- 
+  border-top: 1px solid #222222;
 }
 
 .productos {
   width: 30%;
   display: flex;
   justify-content: flex-start;
-  
 }
 
 .categoria {
@@ -37,7 +33,7 @@ border-top: 1px solid #222222;
   justify-content: flex-end;
 }
 
-.caja{
+.caja {
   color: black;
   text-decoration: none;
 }

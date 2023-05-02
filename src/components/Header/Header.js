@@ -1,22 +1,21 @@
 import React from "react";
-
-import Nav from "../Nav/Nav";
+import img from "../../assets/logo.png"
 
 import "./Header.css";
 
-import img from "../../assets/logo.png"
-
+//Componente
+import Nav from "../Nav/Nav";
 
 const Header = () => {
     return (
-       
-            <div className="header">
-                <div className="titulo py-3">
+
+        <div className="header">
+            <div className="titulo py-3">
                 <img src={img} className="img-fluid imagen" alt="Logo" />
-                </div>
-                
-                <Nav className="menu py-2"/>
             </div>
+
+            <Nav className="menu py-2" />
+        </div>
 
     )
 }

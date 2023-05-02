@@ -1,6 +1,7 @@
 import React from "react";
+
+//Componente
 import CardList from "../../components/CardList/CardList";
-// import { Link } from "react-router-dom";
 const Home = () =>{
     return(
         <div>

@@ -1,25 +1,34 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import { useParams } from "react-router-dom";
+
+import "./ItemDetail.css";
+
+//Componentes
 import Item from "../../components/Item/Item";
 import SpinnerBs from "../../components/Spinner/SpinnerBs";
 
-import "./ItemDetail.css";
+// Firebase 
+import { collection, query, getDocs, where, documentId, } from "firebase/firestore";
+import { db } from "../../components/firebase/firebaseConfig";
 
 const ItemDetail = () => {
   const [item, setItem] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   let { id } = useParams();
 
-  useEffect(
-    () => {
-      axios.get(`https://fakestoreapi.com/products/${id}`)
-        .then((res) => { setItem(res.data) })
-        .finally(
-          setTimeout(() => {
-            setIsLoading(false);
-          }, 1000));
-    }, [id]);
+  useEffect(() => {
+    const getItem = async () => {
+      const q = query(collection(db, "comidas"), where(documentId(), "==", id));
+      const docs = [];
+      const querySnapshot = await getDocs(q);
+      querySnapshot.forEach((doc) => {
+        docs.push({ ...doc.data(), id: doc.id });
+      });
+      setItem(docs[0]);
+      setIsLoading(false);
+    };
+    getItem();
+  }, [id]);
 
   return (
     <>
@@ -30,12 +39,12 @@ const ItemDetail = () => {
       ) : (
         <div
         >
-        
-          <Item data={item} /> 
-       
+
+          <Item data={item} />
+
         </div>
       )}
-     
+
     </>
   )
 

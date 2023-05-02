@@ -1,26 +1,39 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-import CardItem from "../CardItem/CardItem";
-import "./CardList.css"
 import { Link } from "react-router-dom";
+import "./CardList.css"
+
+//Componentes 
+import CardItem from "../CardItem/CardItem";
 import SpinnerBs from "../Spinner/SpinnerBs";
 import Categorias from "../Categorias/Categorias";
-// import Dropdown from 'react-bootstrap/Dropdown';
+
+// Firebase
+import { collection, query, getDocs } from "firebase/firestore";
+import { db } from "../firebase/firebaseConfig";
 
 const CardList = () => {
-  const [Items, setItem] = useState([]);
+  const [Items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("https://fakestoreapi.com/products")
-      .then((res) => { setItem(res.data) });
+    const getItems = async () => {
+      const q = query(collection(db, "comidas"));
+      const docs = [];
+      const querySnapshot = await getDocs(q);
+
+      querySnapshot.forEach((doc) => {
+        docs.push({ ...doc.data(), id: doc.id });
+      });
+
+      setItems(docs);
+    };
+    getItems();
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
   }, []);
 
   return (
-
     <div>
 
       <div className="titulo-pagina py-2">
