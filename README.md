@@ -15,7 +15,7 @@ Este proyecto fue creado por MSL.
 
 ## Funcionamiento
 
-En Rotisería Puerco Morfo, los usuarios pueden navegar por los diferentes productos disponibles en la aplicación, visualizar su información y agregarlos al carrito. Además, pueden realizar la compra de los productos seleccionados y ver su historial de compras.
+En Rotisería Puerco Morfo, los usuarios pueden navegar por los diferentes productos disponibles en la aplicación, visualizar su información y agregarlos al carrito. Además, pueden realizar la compra de los productos seleccionados.
 
 
 ## Licencia
